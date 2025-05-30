@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+    height:100vh;
+    background-color:blanchedalmond;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#pai{
+    width: 400px;
+    height: 500px;
+    background-color:white;
+    box-shadow:0px 0px 7px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+#pai form{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 90%;
+}
+
+#pai form .inputbox{
+    border-bottom:1px solid black;
+    width: 90%;
+    height: 30px;
+    margin-bottom:20px;
+}
+
+#pai form .inputbox input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: transparent;
+}
+
+#pai #button{
+    width: 90%;
+    height: 50px;
+    background-color:red;
+    color:white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgb(0 0 0 / 41%);
+    border-radius:8px;
+}
+
+#pai #button:hover{
+    background-color: brown;
+}
