@@ -1,0 +1,33 @@
+header{
+    width:100%;
+    height:150px;
+}
+
+.visualise{
+    border:1px solid black;
+}
+
+.verde{
+    width:100%;
+    height:30%;
+    background-color:rgb(7, 185, 185);
+    display:flex;
+    flex-direction:row;
+}
+
+.branco{
+    width:100%;
+    height:70%;
+    background-color:white;
+}
+
+.verde > div{
+    display:flex;
+    flex-direction:row;
+}
+
+.verde > .inf{
+    margin-right:30px;
+    display:flex;
+    flex-direction:row;
+}
