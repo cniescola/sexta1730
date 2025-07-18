@@ -13,21 +13,59 @@ header{
     background-color:rgb(7, 185, 185);
     display:flex;
     flex-direction:row;
+    align-items:center;
 }
 
 .branco{
     width:100%;
     height:70%;
-    background-color:white;
+    color:white;
+    justify-content:end;
+    align-items:center;
 }
 
 .verde > div{
     display:flex;
     flex-direction:row;
+    width:100%;
+    height:50%;
 }
 
 .verde > .inf{
-    margin-right:30px;
+    margin-right:10px;
     display:flex;
     flex-direction:row;
 }
+div{
+    color:white;
+}
+.inf{
+    margin-right:10px;
+    margin-left:10px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+p{
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+
+.inf1{
+    display:flex;
+    flex-direction:row;
+    margin-right:10px;
+    margin-left:10px;
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+.direita{
+    width:100%;
+    height:50%;
+    
+  
+}
+
