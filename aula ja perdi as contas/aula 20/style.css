@@ -6,7 +6,6 @@ body{
 header{
     width:100%;
     height:100px;
-    background-color:rgb(138, 0, 0);
     display:flex;
 
 }
@@ -18,6 +17,7 @@ header{
     flex-direction:row;
     justify-content:space-between;
     padding:0 25px;
+    box-shadow:1px 1px 7px rgba(0, 0, 0, 0.39);
 }
 
 .navtop .logo{
@@ -48,10 +48,28 @@ header{
 }
 
 .navtop .lis .lp ul li a{
-    color:white;
+    color:rgb(0, 0, 0);
     text-decoration:none;
 }
 
 .navtop .lis .lp ul li:hover a{
-    color:red;
+    color:rgb(252, 68, 68);
+}
+
+section{
+    width:100%;
+    height:60vh;
+    background-image:url("paisagem.jpg");
+    background-size:100%;
+    filter:brightness(90%);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+section > h1,
+section > p{
+    color:white;
+    text-shadow:1px 1px 7px black;  
 }
