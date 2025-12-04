@@ -1,0 +1,108 @@
+[33mcommit bce19eec6a2e8bf3fa05ebf963fd0675b9fc15c7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32marthur[m[33m, [m[1;31morigin/arthur[m[33m)[m
+Author: Arthur <fariaarthur300@gmail.com>
+Date:   Fri Oct 31 19:21:19 2025 -0300
+
+    --> Fizemos a main com 6 cards similar ao site usado de exemplo
+
+[33mcommit 7c58c1d36510a6e542ed6c3df3957c10c7d9a40d[m
+Author: Arthur <fariaarthur300@gmail.com>
+Date:   Fri Oct 24 19:04:19 2025 -0300
+
+    --> Continuamos a criação do site, passando pra parte do main e
+    inserindo uma imagem na 1º seção
+
+[33mcommit e20c88e213fd29426cb0b43677197cbad0bed994[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Fri Oct 10 19:25:02 2025 -0300
+
+    --> Aula 20
+    Fizemos o header com logo e ul
+
+[33mcommit 15ec95012de179807e14f02deebd4a396836416f[m
+Author: Artur <fariaarthur300@gmail.com>
+Date:   Fri Sep 5 19:22:19 2025 -0300
+
+    --> Fizemos a criação de um formulário com o html e css, nn deu tempo de
+    usar o php ent foi só isso msm :D
+
+[33mcommit 9db7386a5b959adc1140ee0075a98533e141cf4e[m
+Author: Arthur <fariaarthur300@gmail.com>
+Date:   Fri Jul 25 19:27:14 2025 -0300
+
+    Só continuei (apenas eu) a criação do site e usamos banco de dados para
+    criar uma tabela com id, nome, telefone, cpf e cep, só q n salvou :D
+
+[33mcommit 95278a037405a56c55259454c18256af0c952e72[m
+Author: Arthur <fariaarthur300@gmail.com>
+Date:   Fri Jul 18 19:27:21 2025 -0300
+
+    --> Continuamos a recriação do site Kurigram, usei o dropdown para cair
+    os botões quando vc clica, terminando a parte branca de cima do site e
+    mais algumas coisas. :D (teclado ruim)
+
+[33mcommit 23c382e19095afded13ae86fc1ff1030ceccd3ff[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Fri Jul 11 19:22:01 2025 -0300
+
+    --> Hoje utilizamos uma parte do bootstrap como base para nosso código,
+    fizemos a aparência do header com base no site exemplo e colocamos
+    os ícones do lado esquerdo, separamos também em lados esquerda e
+    direita para separar os ícones da região e número e as redes sociais
+    (que não fizemos nessa aula) :D
+
+[33mcommit 40827f97f4218c62580ee74bf5751672582ce423[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Fri Jun 27 19:22:16 2025 -0300
+
+    --> Criamos uma interface de site usando o cabeçalho (main), o centro
+    (main) e rodapé (footer). Além disso usamos seção, margem (margin e
+    padding) e mexer no tamanho das div e seção dentro de cada um.
+
+[33mcommit f05e1c1df9dcd4a7ac327441817ea4df46dc8fa3[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Fri Jun 6 18:49:42 2025 -0300
+
+    --> Terminamos o processo de criação de uma pagina de login / formulário
+    começado na aula 5, aprendi a mudar o texto de uma div, o hover (esqueci
+    de fazer antes de comitar ;-;) mexer na borda da div e mudar a aparência
+    do input e a classe dela :D
+
+[33mcommit 2bd284a01264ade90f708dee737414da72bdd3c7[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Fri May 30 18:55:34 2025 -0300
+
+    --> Aprendemos a criar formulário/espaço usado para digitar o email como
+    nos sites, também outros códigos como o de criar texto (h1, h2, h3, h4,
+    h5), de sombra nos objetos, mais direções do flex e usar o input.
+     -Comandos:
+           <form>
+           <input type=("text" ou "password" ou "number" etc)
+           placeholder="nome q vc quiser">
+           box-shadow: 0px (eixo x) 0px (eixo y) 8px (tamanho do blur) rgba
+           (cor)
+
+[33mcommit 205d87fc0a10c9ea61d1fc4dfa82e11ed7533103[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Fri May 23 18:51:08 2025 -0300
+
+    --> Aprendemos a mexer com  a flexibilização do layout, mexendo com a
+    posição do objeto com relação a coluna e linha
+      -Principais codigos:
+          -Display:flex;
+          -Flex-direction:column/row;
+          -Justify-content:start/center/end;
+          -Aling-items:start/center/end;
+
+[33mcommit 8cf4af88de3d11dd6be2a3bffdf3d3e7d0c297ec[m
+Author: arthur <fariaarthur300@gmail.com>
+Date:   Sat May 10 11:32:28 2025 -0300
+
+    Finalizei os testes
+
+[33mcommit a9b4664c01ed46ef227365f06f708785967b54f1[m
+Author: cniescola <cniescola85@gmail.com>
+Date:   Fri May 2 18:27:59 2025 -0300
+
+    Create readme.txt
+    
+    primeiro commit
