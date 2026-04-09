@@ -19,12 +19,29 @@ header .meio ul{
     gap: 30px;
     justify-content:center;
     align-items:center;
+    font-family: sans-serif;
+}
+header .meio ul li{
+    font-size: 15px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
+header .meio ul li:hover{
+    color:#8b4846;
+}
 .dir a{
+    display: flex;
     padding:10px 30px;
     border-radius:60px;
-    background-color:rgb(253, 253, 146);
-    box-shadow:1px 1px 3px #00000030;
+    background-color:#8b4846;
     text-decoration:none;
+    color:white;
+    font-family: sans-serif;
+    transform: translateY(0);
+    transition:0.5s;
+}
+
+.dir a:hover{
+    transform: translateY(-2px);
 }
