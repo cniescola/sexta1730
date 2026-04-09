@@ -157,7 +157,125 @@ section.dois{
 }
 
 section.dois > div.l1{
-    width:550px;
-    height:400px;
-    background-color:black;
+    width:625px;
+    height:425px;
+    border-radius:25px;
 }
+
+section.dois > div.l1 img{
+    width:100%;
+    height:100%;
+    border-radius:25px;
+    box-shadow:0px 0px 20px 7px #0000001a;
+}
+
+section.dois > div.l2{
+    height:100%;
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+}
+
+section.dois > div.l2 div{
+    padding-bottom:25px;
+}
+
+section.dois > div.l2 div#title{
+    width:350px;
+    height:auto;
+    font-size:55px;
+    font-weight:700;
+    color:rgb(252, 245, 245);
+}
+
+section.dois > div.l2 div#text{
+    width:625px;
+    height:auto;
+    font-size:17px;
+    color:rgb(252, 245, 245);
+    padding-bottom:35px;
+}
+
+section.dois > div.l2 button{
+    width:200px;
+    height:50px;
+    background-color:rgb(252, 245, 245);
+    border:none;
+    border-radius:25px;
+    font-size:17px;
+    font-weight:600;
+    color:#6B3636;
+    transform:translateY(0px);
+    transition-duration:0.5s;
+}
+
+section.dois > div.l2 button:hover{
+    transform:translateY(-4px);
+    background-color:#8B4846;
+    color:white;
+    border:2px solid white;
+    box-shadow:0px 6px 4px 6px rgba(255, 255, 255, 0.123);
+}
+
+section.tres{
+    width:100%;
+    height:120vh;
+    display:flex;
+    flex-direction:column;
+}
+
+section.tres div.cima{
+    height:30%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    align-items:center;
+}
+
+section.tres div.cima div#texto{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:auto;
+    width:350px;
+    font-size:46px;
+    font-weight:700;
+    text-align:center;
+    padding-bottom:25px;
+}
+
+section.tres div.baixo{
+    height:70%;
+    width:100%;
+    background-color: #bb8482;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+section.tres div.baixo div#bola{
+    height:400px;
+    width:400px;
+    background-color:black;
+    border-radius:100%;
+    overflow:hidden;
+    margin-left:150px;
+}
+
+section.tres div.baixo div#bola img{
+    max-width:100%;
+}
+
+section.tres div.baixo .textos{
+    height:100%;
+    width:50%;
+    border:1px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
