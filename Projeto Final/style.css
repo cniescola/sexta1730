@@ -9,6 +9,8 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 header{
     height:80px;
     width:100%;
@@ -250,7 +252,6 @@ section.tres div.cima div#texto{
 section.tres div.baixo{
     height:70%;
     width:100%;
-    background-color: #bb8482;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -260,10 +261,10 @@ section.tres div.baixo{
 section.tres div.baixo div#bola{
     height:400px;
     width:400px;
-    background-color:black;
     border-radius:100%;
     overflow:hidden;
     margin-left:150px;
+    box-shadow:0px 0px 2.5rem 6px rgba(0, 0, 0, 0.103);
 }
 
 section.tres div.baixo div#bola img{
@@ -273,9 +274,49 @@ section.tres div.baixo div#bola img{
 section.tres div.baixo .textos{
     height:100%;
     width:50%;
-    border:1px solid black;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    align-items:center;
 }
 
+section.tres div.baixo div.textos div#texto2{
+    font-size:1.13rem;
+    color:rgba(48, 48, 48, 0.884);
+    width:91%;
+    line-height: 1.8;
+}
+
+section.tres div.baixo div.textos div#stats{
+    height:30%;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top:2rem;
+}
+
+section.tres div.baixo div.textos div#stats div.quadrado{
+    height:8.8rem;
+    width:10.2rem;
+    background-color:rgba(250, 235, 215, 0.322);
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+section.tres div.baixo div.textos div#stats div.quadrado a#n{
+    color:#975a5a;
+    font-size:2.5rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+section.tres div.baixo div.textos div#stats div.quadrado a#t{
+    color:rgba(0, 0, 0, 0.904);
+    font-weight:380;
+    font-size:15px
+}
