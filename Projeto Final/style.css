@@ -320,3 +320,94 @@ section.tres div.baixo div.textos div#stats div.quadrado a#t{
     font-weight:380;
     font-size:15px
 }
+
+footer section.foot{
+    width:100%;
+    height:70vh;
+    background-color:#4A2F2F;
+    display:flex;
+    flex-direction:column;
+}
+
+footer section.foot .up{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-direction:row;
+}
+
+footer section.foot .up #um{
+    width:25%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+footer section.foot .up #um #t4{
+    width:80%;
+    height:35%;
+    font-size:21px;
+    color:white;
+    font-weight:700;
+    display:flex;
+    justify-content:start;
+    align-items:end;
+}
+
+footer section.foot .up #um #t5{
+    width:80%;
+    height: 60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    line-height:30px;
+}
+
+footer section.foot .up #um .medias{
+    height:15%;
+    width:65%;
+    padding-right:47px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer section.foot .up #um .medias .media{
+    height:38px;
+    width:38px;
+    border-radius:100%;
+    background-color:#eeecec27;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer section.foot .up #um .medias .media i{
+    font-size:37px;
+    color:white;
+}
+
+
+
+footer section.foot .up #dois{
+    width:25%;
+    height:100%;
+}
+
+footer section.foot .up #tres{
+    width:25%;
+    height:100%;
+}
+
+footer section.foot .up #quatro{
+    width:25%;
+    height:100%;
+}
+
+footer section.foot .down{
+    width:95%;
+    height:30%;
+}
