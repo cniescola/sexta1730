@@ -45,3 +45,96 @@ header .meio ul li:hover{
 .dir a:hover{
     transform: translateY(-2px);
 }
+
+main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    background-color: #f9f4ef;
+
+}
+
+main > div{
+    width:50%;
+    height:100%;
+    min-height:120vh;
+    
+}
+
+main .esq{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    
+}
+
+main .esq h1{
+    font-size:4rem;
+    font-weight: 700;
+    color:#6b3636;
+    line-height: 1.2;
+    font-family: sans-serif;
+}
+h1,p{
+    padding:0;
+    margin:0;
+}
+main .esq p{
+    font-size:1.2rem;
+    color:#2c2c2c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .esq .button button{
+     display: flex;
+    padding:16px 70px;
+    border-radius:60px;
+    background-color:#8b4846;
+    text-decoration:none;
+    color:white;
+    font-family: sans-serif;
+    transform: translateY(0);
+    transition:0.5s;
+    box-shadow: none;
+    border:none;
+    cursor:pointer;
+}
+
+main .esq .button button:hover{
+     transform: translateY(-2px);
+}
+
+main .esq > div{
+    display:flex;
+    flex-direction:column;
+    width: 91%;
+    padding-left:8%;
+    gap: 25px;
+}
+
+main .dir{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    padding:40px 0;
+}
+
+main .dir .image{
+   width: 80%;
+}
+
+main .dir .image img{
+    width:100%;
+    border-radius: 30px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+main .dir .image img:hover{
+    transform: scale(1.03);
+}
