@@ -30,6 +30,7 @@ header{
     flex-direction:row;
     gap:30px;
     list-style:none;
+    font-weight:500;
 }
 
 .quadrado a{
@@ -65,8 +66,8 @@ ul li:hover{
 
 main{
     width:100%;
-    height:130vh;
-    background-color: aqua;
+    min-height:130vh;
+    background-color:#FAF6F2;
     display:flex;
     flex-direction:column;
 }
@@ -80,22 +81,45 @@ section{
 section .direita{
     width:50%;
     height:100%;
-    background-color:rgb(255, 10, 10);
     display:flex;
     flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid black;
+}
+
+section .direita h1{
+    font-size:4rem;
+    color:#6B3636;
+    font-weight:700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section .direita p{
+    font-size:1.2rem;
+    font-family:"Font Awesome 6 Free";
+    color:#2c2c2c;
+
 }
 
 section .esquerda{
     width:50%;
     height:100%;
-    background-color:black;
     display:flex;
     flex-direction:column;
 }
 
-.esquerda img{
-    border-radius:30px;
+.esquerda .imagem{
+    width:100%;
     display:flex;
     flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:4rem 0;
+}
+
+.esquerda .imagem img{
+    width:91%;
+    border-radius:30px;
 }
 
