@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 header{
@@ -36,6 +37,7 @@ header .meio ul li a:hover{
     color: #5a2b2b;
 }
 
+
 header .dir a{
     display: flex;
     font-weight: bold;
@@ -60,15 +62,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(245, 234, 221, 0.596);
-    gap: 30px;
-    padding-top: 30px;
+    background-color: white;
 }
 main #sec1{
     width:100%;
     height: 140vh;
     display:flex;
     flex-direction:row;
+    background-color: #FAF6F2;
+    padding: 50px 0;
 }
 
 main #sec1 .esq{
@@ -106,7 +108,7 @@ main #sec1 .esq > div a{
     display: flex;
     font-family: sans-serif;
     text-align: center;
-    width: 20%;
+    width: 15%;
     font-size: 15px;
     color: white;
     font: bold;
@@ -160,7 +162,7 @@ main #sec2{
     flex-direction: row;
     background-color: #8b4846;
 }
-main #sec2 .esq,.dir{
+main #sec2 .esq, main #sec2 .dir{
     width: 50%;
 }
 
@@ -229,4 +231,47 @@ main #sec2 .dir > div button:hover{
     background-color: #8b4846;
     transform: translateY(-2px);
     box-shadow: 0px 15px 25px rgba(255, 255, 255, .300);
+}
+
+main #sec3{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #sec3 .cima h1{
+    color: #5a2b2b;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+main #sec3 .baixo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 200px;
+}
+
+main #sec3 .baixo .esq{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+}
+
+main #sec3 .baixo img{
+    width: 381px;
+    height: 381px;
+    border-radius: 100%;
+    box-shadow: 1px 5px 10px rgba(250, 246, 242,1);
+}
+
+main #sec3 .baixo .dir{
+    width: 50%;
 }
