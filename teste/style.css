@@ -334,3 +334,52 @@ main #sec3 .baixo .dir .baixo h1{
     font-size: 2.5rem;
 }
 
+main #sec4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #sec4 .cima, main #sec4 .baixo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #sec4 .baixo{
+    flex-direction: row;
+    gap: 30px;
+}
+
+main #sec4 .baixo .quadro{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid;
+}
+
+main #sec4 .baixo .quadro .imagem{
+    width: 100%;
+    height: 70%;
+}
+
+
+main #sec4 .baixo .quadro .desc{
+    width: 100%;
+    height: 30%;
+}
+
+main #sec4 .baixo .quadro .imagem img{
+    width: 100%;
+    height: 100%;
+}
