@@ -327,6 +327,8 @@ footer section.foot{
     background-color:#4A2F2F;
     display:flex;
     flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 footer section.foot .up{
@@ -334,6 +336,7 @@ footer section.foot .up{
     height:70%;
     display:flex;
     flex-direction:row;
+    border-bottom:
 }
 
 footer section.foot .up #um{
@@ -368,7 +371,7 @@ footer section.foot .up #um #t5{
 footer section.foot .up #um .medias{
     height:15%;
     width:65%;
-    padding-right:47px;
+    padding-right:50px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -385,29 +388,141 @@ footer section.foot .up #um .medias .media{
     align-items:center;
 }
 
+
 footer section.foot .up #um .medias .media i{
-    font-size:37px;
+    font-size:15px;
     color:white;
+    padding-bottom:1px;
 }
-
-
 
 footer section.foot .up #dois{
     width:25%;
     height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+footer section.foot .up #dois #ti2{
+    width:80%;
+    height:35%;
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    align-items:start;
+    color:white;
+    font-size:21px;
+    font-weight:700;
+    padding-bottom:30px;
+}
+
+footer section.foot .up #dois .links{
+    width:80%;
+    height:65%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+footer section.foot .up #dois .links div.seta{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    color:white;
+    font-size:15px;
 }
 
 footer section.foot .up #tres{
     width:25%;
     height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+footer section.foot .up #tres #ti2{
+    width:80%;
+    height:35%;
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    align-items:start;
+    color:white;
+    font-size:21px;
+    font-weight:700;
+    padding-bottom:30px;
+}
+
+footer section.foot .up #tres .links{
+    width:80%;
+    height:65%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+footer section.foot .up #tres .links div.seta{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    color:white;
+    font-size:15px;
 }
 
 footer section.foot .up #quatro{
     width:25%;
     height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:end;
+}
+
+footer section.foot .up #quatro #ti3{
+    width:90%;
+    height:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    color:white;
+    font-size:21px;
+    font-weight:700;
+    padding-top:30px;
+    padding-left:20px;
+}
+
+footer section.foot .up #quatro .infos{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:start;
+    width:90%;
+    height:60%;
+    color:white;
+}
+
+footer section.foot .up #quatro .infos .info{
+    display:flex;
+    flex-direction:row;
+    align-items:start;
+    width:80%;
+    height:auto;
+}
+
+footer section.foot .up #quatro .infos .info .img{
+    width:10px;
+    height:10px;
+    color:#975a5a;
+    margin-right:20px;
 }
 
 footer section.foot .down{
     width:95%;
-    height:30%;
+    height:20%;
+    margin-top:50px;
+    border-top:1px solid rgba(156, 156, 156, 0.185);
 }
