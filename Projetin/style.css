@@ -96,6 +96,7 @@ section .direita h1{
 }
 
 section .direita p{
+    width:570px;
     font-size:1.2rem;
     font-family:"Font Awesome 6 Free";
     color:#2c2c2c;
