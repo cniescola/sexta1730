@@ -352,34 +352,77 @@ main #sec4 .cima, main #sec4 .baixo{
     align-items: center;
 }
 
+main #sec4 .cima h1{
+    font-size: 3rem;
+    text-align: center;
+    color:#6b3636;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin:0;
+}
+
+main #sec4 .cima h3{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    margin-bottom: 3rem;
+    font-weight:300;
+    margin:0;
+}
+
 main #sec4 .baixo{
+    display: flex;
     flex-direction: row;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+:root{
+    --bgImg : url("");
+    --tm : 18px;
 }
 
 main #sec4 .baixo .quadro{
-    width: 40%;
+    width:291px;
+    min-height:414px;
+    background-color: white;
+    box-shadow: 0 20px 60px rgba(139, 72, 70, 0.2);
+    border-radius:var(--tm);
+}
+
+main #sec4 .baixo h1{
+    font-size: 1.3rem;
+    color: #6b3636;
+    margin: 1.5rem 0 0.5rem;
+}
+
+main #sec4 .baixo h3{
+    font-size: 1rem;
+    color: #2c2c2c;
+    margin-bottom: 1.5rem;
+}
+
+main #sec4 .imagem{
+    width: 100%;
     height: 300px;
+    background-image: var(--bgImg);
+    background-size: cover;
+    background-position: center;
+    border-radius:var(--tm) var(--tm) 0 0;
+    transition: 0.5s;
+}
+
+main #sec4 .imagem:hover{
+    background-size: 120%;
+    box-shadow: 0 10px 30px rgba(139, 72, 70, 0.733);
+}
+
+main #sec4 .desc{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
-    border: 2px solid;
-}
-
-main #sec4 .baixo .quadro .imagem{
-    width: 100%;
-    height: 70%;
-}
-
-
-main #sec4 .baixo .quadro .desc{
-    width: 100%;
-    height: 30%;
-}
-
-main #sec4 .baixo .quadro .imagem img{
-    width: 100%;
-    height: 100%;
 }
