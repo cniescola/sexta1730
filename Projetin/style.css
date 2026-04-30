@@ -72,45 +72,66 @@ main{
     flex-direction:column;
 }
 
-section{
+.P1{
     width:100%;
     height:100%;
     display:flex;
     flex-direction:row;
 }
-section .direita{
+
+.P1 .direita{
     width:50%;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border: 1px solid black;
 }
 
-section .direita h1{
+.P1 .direita h1{
     font-size:4rem;
     color:#6B3636;
     font-weight:700;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-section .direita p{
+.P1 .direita p{
     width:570px;
     font-size:1.2rem;
     font-family:"Font Awesome 6 Free";
     color:#2c2c2c;
+}
+
+.quadrado2{
+    width:100%;
+    height:auto;
+    display:flex;
+    margin-top:35px;
+}
+
+.quadrado2 a{
+    padding:16px 48px;
+    background-color:#8b4846;
+    border-radius:30px;
+    color:white;
+    letter-spacing:1px;
+    font-weight:700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
-section .esquerda{
+.Vo{
+    width:90%;
+}
+
+.P1 .esquerda{
     width:50%;
     height:100%;
     display:flex;
     flex-direction:column;
 }
 
-.esquerda .imagem{
+.P1 .esquerda .imagem{
     width:100%;
     display:flex;
     flex-direction:column;
@@ -119,8 +140,24 @@ section .esquerda{
     padding:4rem 0;
 }
 
-.esquerda .imagem img{
+.P1 .esquerda .imagem img{
     width:91%;
     border-radius:30px;
 }
 
+.P2{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    border:1px solid black;
+}
+
+.P2 .direita{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
