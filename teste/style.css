@@ -336,7 +336,9 @@ main #sec3 .baixo .dir .baixo h1{
 
 main #sec4{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    gap: 100px;
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,6 +393,11 @@ main #sec4 .baixo .quadro{
     background-color: white;
     box-shadow: 0 20px 60px rgba(139, 72, 70, 0.2);
     border-radius:var(--tm);
+    transition: 0.5s;
+}
+
+main #sec4 .baixo .quadro:hover{
+    box-shadow: 0 10px 20px rgba(139, 72, 70, 0.733);
 }
 
 main #sec4 .baixo h1{
@@ -405,19 +412,25 @@ main #sec4 .baixo h3{
     margin-bottom: 1.5rem;
 }
 
+main #sec4 .baixo .quadro > div{
+    overflow: hidden;
+    border-radius:var(--tm) var(--tm) 0 0;
+}
+
+
+
 main #sec4 .imagem{
     width: 100%;
     height: 300px;
     background-image: var(--bgImg);
     background-size: cover;
-    background-position: center;
     border-radius:var(--tm) var(--tm) 0 0;
     transition: 0.5s;
 }
 
 main #sec4 .imagem:hover{
-    background-size: 120%;
-    box-shadow: 0 10px 30px rgba(139, 72, 70, 0.733);
+    transform: scale(1.1);
+
 }
 
 main #sec4 .desc{
@@ -425,4 +438,140 @@ main #sec4 .desc{
     flex-direction:column;
     justify-content: center;
     align-items: center;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: #4a2f2f;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top: 50px;
+}
+
+footer .cima{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: #4a2f2f;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}
+
+footer .cima > div{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+footer .blocks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+footer h3{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p{
+    color: white;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .blocks .redes{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+footer .redes a{
+    border-radius: 100px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.534);
+    transition: 0.3s;
+}
+
+footer .redes a:hover{
+    transform: translateY(-2px);
+    background-color: #8b4846;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}
+
+
+footer .links a{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    transition: 0.5s;
+}
+
+footer .links a:hover{
+    color: #8b4846;
+    transform: translateX(10px);
+}
+
+footer .blocks #contato{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer #contato li{
+    gap: 1rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .blocks #contato i{
+    color: #965656;
+}
+
+footer .baixo{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
 }
