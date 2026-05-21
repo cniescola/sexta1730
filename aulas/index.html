@@ -114,9 +114,37 @@
             var divdProd = $('[name="divdProd"]').val();
             var smsProd = $('[name="smsProd"]').val();
 
-            console.log(nomeProd+"\n"+linkProd+"\n"+descProd+"\n"+precoCustProd+"\n"+porcentProd+"\n"+precoProd+"\n"+metaProd+"\n"+divdProd+"\n"+smsProd);
+            // console.log(nomeProd+"\n"+linkProd+"\n"+descProd+"\n"+precoCustProd+"\n"+porcentProd+"\n"+precoProd+"\n"+metaProd+"\n"+divdProd+"\n"+smsProd);
+
+        var dados = new FormData();
+
+        dados.append("nomeProd",nomeProd);
+        dados.append("linkProd",linkProd);
+        dados.append("descProd",descProd);
+        dados.append("precoCustProd",precoCustProd);
+        dados.append("porcentProd",porcentProd);
+        dados.append("precoProd",precoProd);
+        dados.append("metaProd",metaProd);
+        dados.append("divdProd",divdProd);
+        dados.append("smsProd",smsProd);
+
+        $.ajax({
+            url:"recebe.php",
+            method:"POST",
+            data:dados,
+            processData:false,
+            contentType: false,
+            success: function( content ){
+                $('main').after(content);
+            }
+        });
+
 
         });
+
+      
+      
+       
 
         // var btnSalvar = document.querySelector('[name="salvar"]');
         
