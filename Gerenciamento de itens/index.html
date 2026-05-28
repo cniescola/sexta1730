@@ -24,23 +24,119 @@
     </header>
 
     <main>
-        <section>
-            <div class="mt-4 row">
-                <div class="container card col">
-                    <div class="container ">
-                        <div class="container">
-                            <label class="form-label">Digite o nome do produto</label>
-                            <input type="text" class="form-control" name="nomeProd">
+
+        <section class="container-fluid mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 card p-4">
+                        <h3 class="h5 mb-5">Cadastro de produto</h3>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label">Digite o nome do produto</label>
+                                <input type="text" class="form-control" name="nomeProd">
+                            </div>
+                            <div class="col b">
+                                <label class="form-label">link do produto</label>
+                                <input type="text" class="form-control" name="linkProd">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Descrição do produto</label>
+                                <textarea class="form-control" rows="9" name="descProd"></textarea>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                    <div class="mb-3">
+                                        <label class="form-label">Preço de Custo R$</label>
+                                        <input type="text" class="form-control" name="precoCustProd">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">% acrecimo</label>
+                                        <input type="number" class="form-control" name="porcentProd">
+                                    </div>
+                                    <div class="">
+                                        <label class="form-label">Preço Produto</label>
+                                        <input type="number" class="form-control" name="precoProd">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="card mb-3 p-4">
+                                <label class="form-label">Meta Tags</label>
+                                <input type="text" class="form-control" name="metaProd">
+                            </div>
+                            <div class="card mb-3 p-4">
+                                <label class="form-label">Parcelas</label>
+                                <input type="number" max="12" class="form-control" name="divdProd">
+                            </div>
+                            <div class="card p-4">
+                                <label class="form-label">Mensagem cliente</label>
+                                <input type="text" class="form-control" name="smsProd">
+                            </div>
                         </div>
                     </div>
-                <div class="container card col"></div>
+                </div>
             </div>
-            </section>
+            <div class="container p-4 mb-3">
+                <button class="btn btn-success w-100" type="button" name="salvar" id="salvar">Salvar</button>
+            </div>
+        </section>
+
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $('#salvar').click(function(){
+            var nomeProd = $('[name="nomeProd"]').val();
+            var linkProd = $('[name="linkProd"]').val();
+            var descProd = $('[name="descProd"]').val();
+            var precoCustProd = $('[name="precoCustProd"]').val();
+            var porcentProd = $('[name="porcentProd"]').val();
+            var precoProd = $('[name="precoProd"]').val();
+            var metaProd = $('[name="metaProd"]').val();
+            var divdProd = $('[name="divdProd"]').val();
+            var smsProd = $('[name="smsProd"]').val();
+
+        var dados = new FormData();
+
+        dados.append("nomeProd",nomeProd);
+        dados.append("linkProd",linkProd);
+        dados.append("descProd",descProd);
+        dados.append("precoCustProd",precoCustProd);
+        dados.append("porcentProd",porcentProd);
+        dados.append("precoProd",precoProd);
+        dados.append("metaProd",metaProd);
+        dados.append("divdProd",divdProd);
+        dados.append("smsProd",smsProd);
+
+        $.ajax({
+            url:"recebe.php",
+            method:"POST",
+            data:dados,
+            processData:false,
+            contentType: false,
+            success: function( content ){
+                $('main').after(content);
+            }
+        });
+
+
+        });
+        
+    </script>
 </body>
 
 </html>
