@@ -11,6 +11,22 @@
         $divdProd =$_POST["divdProd"];
         $smsProd =$_POST["smsProd"];
 
-        echo $nomeProd."<br>".$linkProd."<br>".$descProd."<br>".$precoCustProd."<br>".$porcentProd."<br>".$precoProd."<br>".$metaProd."<br>".$divdProd."<br>";
+        $host = "localhost:3306";
+        $user = "root";
+        $key = "cniaraguari85";
+        $db = "dbteste";
+
+        $con = new mysqli($host,$user,$key,$db);
+        $cadastra = "INSERT INTO `produtos` (`id`, `nomeProd`, `linkProd`, `descProd`, `precoCustProd`, `porcentProd`, `precoProd`, `metaProd`, `divdProd`, `smsProd`) VALUES (NULL, '$nomeProd', '$linkProd', '$descProd', '$precoCustProd', '$porcentProd', '$precoProd', '$metaProd', '$divdProd', '$smsProd')";
+
+        $cadastra = mysqli_query($con,$cadastra);
+
+        if(mysqli_affected_rows($con)){
+            echo "<div>$nomeProd</div>";
+        }else{
+            echo "informação não cadastrada";
+        }
+
+        
     }
 ?>
