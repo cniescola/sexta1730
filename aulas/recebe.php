@@ -11,13 +11,8 @@
         $divdProd =$_POST["divdProd"];
         $smsProd =$_POST["smsProd"];
 
-        $host = "localhost:3306";
-        $user = "root";
-        $key = "cniaraguari85";
-        $db = "dbteste";
-
-        $con = new mysqli($host,$user,$key,$db);
-        $cadastra = "INSERT INTO `produtos` (`id`, `nomeProd`, `linkProd`, `descProd`, `precoCustProd`, `porcentProd`, `precoProd`, `metaProd`, `divdProd`, `smsProd`) VALUES (NULL, '$nomeProd', '$linkProd', '$descProd', '$precoCustProd', '$porcentProd', '$precoProd', '$metaProd', '$divdProd', '$smsProd')";
+        include "conexao.php";
+        $cadastra = "INSERT INTO `prods` (`id`, `nome`, `link`, `desc`, `PC`, `percent`, `PP`) VALUES (NULL, '$nomeProd', '$linkProd', '$descProd', '$precoCustProd', '$porcentProd', '$precoProd')";
 
         $cadastra = mysqli_query($con,$cadastra);
 
