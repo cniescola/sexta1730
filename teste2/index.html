@@ -15,8 +15,8 @@
         <div class="container-fluid p-4 card">
             <div class="container">
                 <ul class="nav d-flex justify-content-center">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item"><a href="contas.php" class="nav-link">Contas</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
@@ -83,15 +83,6 @@
         </div>
     </section>
 
-    <div class='container.fluid mt-5 d-flex justify-content-center align-items-center'>
-        <div  class='container p-4 d-flex flex-column justify-content center bg-secondary-subtle mt-2 rounded-2 shadow'>
-            <h1 id="lista" class="text-center mb-5">Contas Cadastradas</h1>
-        </div>
-    </div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -102,6 +93,22 @@
 
 
     <script type="text/javascript">
+
+        /* db
+        CREATE DATABASE dbcontas;
+
+use dbcontas;
+
+CREATE TABLE usuario (
+        `id` INT NOT NULL auto_increment PRIMARY KEY,
+        `nome` varchar(50) null,
+        `email` varchar(50) not null unique,
+        `senha` varchar(50) not null,
+        `tel` varchar(50) null,
+        `email_contato` varchar(50) null
+);
+        */
+
 
         $('[name = "cadastrar"]').click(function () {
 
@@ -128,7 +135,7 @@
                 processData: false,
                 contentType: false,
                 success: function (content) {
-                    $('#lista').after(content)
+                    alert(content)
                 }
             })
 
