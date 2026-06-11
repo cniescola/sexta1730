@@ -7,7 +7,7 @@
     <title>Gerenciamento de Estoque</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
     <header class="container-fluid p-4 card">
         <nav class="container">
             <ul class="nav d-flex flex-row justify-content-center">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
@@ -93,13 +93,16 @@
 
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
 
-        $('#salvar').click(function(){
+        $('#salvar').click(function () {
             var nomeProd = $('[name="nomeProd"]').val();
             var linkProd = $('[name="linkProd"]').val();
             var descProd = $('[name="descProd"]').val();
@@ -110,33 +113,33 @@
             var divdProd = $('[name="divdProd"]').val();
             var smsProd = $('[name="smsProd"]').val();
 
-        var dados = new FormData();
+            var dados = new FormData();
 
-        dados.append("nomeProd",nomeProd);
-        dados.append("linkProd",linkProd);
-        dados.append("descProd",descProd);
-        dados.append("precoCustProd",precoCustProd);
-        dados.append("porcentProd",porcentProd);
-        dados.append("precoProd",precoProd);
-        dados.append("metaProd",metaProd);
-        dados.append("divdProd",divdProd);
-        dados.append("smsProd",smsProd);
+            dados.append("nomeProd", nomeProd);
+            dados.append("linkProd", linkProd);
+            dados.append("descProd", descProd);
+            dados.append("precoCustProd", precoCustProd);
+            dados.append("porcentProd", porcentProd);
+            dados.append("precoProd", precoProd);
+            dados.append("metaProd", metaProd);
+            dados.append("divdProd", divdProd);
+            dados.append("smsProd", smsProd);
 
-        $.ajax({
-            url:"recebe.php",
-            method:"POST",
-            data:dados,
-            processData:false,
-            contentType: false,
-            success: function( content ){
-                $('main').after(content);
-            }
+            $.ajax({
+                url: "recebe.php",
+                method: "POST",
+                data: dados,
+                processData: false,
+                contentType: false,
+                success: function (content) {
+                    $('main').after(content);
+                }
+            });
+
+
         });
 
-
-        });
-        
     </script>
 </body>
-
+ <!-- ligar site = php -S localhost:8000-->
 </html>
