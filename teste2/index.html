@@ -17,7 +17,7 @@
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
                     <li class="nav-item"><a href="contas.php" class="nav-link">Contas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item"><a href="editar.php" class="nav-link">Editar Contas</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Contato</label>
-                            <input type="tel" placeholder="(12) 12345-6789" class="form-control" name="tel">
+                            <input id="tel" type="tel" placeholder="(12) 12345-6789" class="form-control" name="tel">
                         </div>
                     </div>
 
@@ -94,20 +94,23 @@
 
     <script type="text/javascript">
 
-        /* db
-        CREATE DATABASE dbcontas;
+        $('#tel').on("keypress",function(){
+            if($('#tel').val().length ==1){
+               $('#tel').val("("+$('#tel').val())
+            }
+            if($('#tel').val().length==3){
+               $('#tel').val($('#tel').val()+")")
 
-use dbcontas;
+            }
+            if($('#tel').val().length==9){
+               $('#tel').val($('#tel').val()+"-")
 
-CREATE TABLE usuario (
-        `id` INT NOT NULL auto_increment PRIMARY KEY,
-        `nome` varchar(50) null,
-        `email` varchar(50) not null unique,
-        `senha` varchar(50) not null,
-        `tel` varchar(50) null,
-        `email_contato` varchar(50) null
-);
-        */
+            }
+            
+        })
+        
+
+        
 
 
         $('[name = "cadastrar"]').click(function () {

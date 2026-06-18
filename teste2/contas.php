@@ -17,7 +17,7 @@
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-item"><a href="index.html" class="nav-link">Cadastro</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item"><a href="editar.php" class="nav-link">Editar Contas</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -30,14 +30,13 @@
             <div class='container p-4 d-flex flex-column justify-content center bg-secondary-subtle mt-2 rounded-2 shadow'>
                 <h1 class="text-center mb-5">Contas Cadastradas</h1>
 
-                <table class="table table-striped rounded-2">
+                <table class="table table-striped table-light rounded-2">
 
                     <thead>
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col">nome</th>
                             <th scope="col">email</th>
-                            <th scope="col">senha</th>
                             <th scope="col">telefone</th>
                             <th scope="col">email-contato</th>
                         </tr>
@@ -49,7 +48,22 @@
 
                             include "conexao.php";
 
-                            $select = "SELECT * FROM ``"
+                            $select = "SELECT * FROM `usuario`";
+
+                            $select = mysqli_query($con,$select);
+
+                            while($exibe = mysqli_fetch_array($select) ){
+                                ?>
+                                <tr>
+                                    <td><?php echo $exibe["id"]?></td>
+                                    <td><?php echo $exibe["nome"]?></td>
+                                    <td><?php echo $exibe["email"]?></td>
+                                    <td><?php echo $exibe["tel"]===""? "não cadastrado":$exibe["tel"]?></td>
+                                    <td><?php echo $exibe["email_contato"]===""? "não cadastrado":$exibe["tel"]?></td>
+                                </tr>
+
+                            <?php
+                            }
 
                         ?>
 
