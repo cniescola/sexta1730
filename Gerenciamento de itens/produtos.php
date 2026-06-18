@@ -16,7 +16,7 @@
         <nav class="container">
             <ul class="nav d-flex flex-row justify-content-center">
                 <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>

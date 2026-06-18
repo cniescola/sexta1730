@@ -4,5 +4,5 @@
     $key = "cniaraguari85";
     $db = "dbprod";
 
-    $con = new mysqli($host, $user, $key, $db);
-?>
+    $con = new mysqli($host,$user,$key,$db);
+    ?>
