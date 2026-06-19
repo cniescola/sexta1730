@@ -16,7 +16,7 @@
             <div class="container">
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-item"><a href="index.html" class="nav-link">Cadastro</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contas</a></li>
+                    <li class="nav-item"><a href="contas.php" class="nav-link">Contas</a></li>
                     <li class="nav-item"><a href="editar.php" class="nav-link">Editar Contas</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
@@ -46,24 +46,24 @@
 
                         <?php
 
-                            include "conexao.php";
+                        include "conexao.php";
 
-                            $select = "SELECT * FROM `usuario`";
+                        $select = "SELECT * FROM `usuario`";
 
-                            $select = mysqli_query($con,$select);
+                        $select = mysqli_query($con, $select);
 
-                            while($exibe = mysqli_fetch_array($select) ){
-                                ?>
-                                <tr class="conta">
-                                    <td name="id"><?php echo $exibe["id"]?></td>
-                                    <td name="nome"><?php echo $exibe["nome"]?></td>
-                                    <td name="email"><?php echo $exibe["email"]?></td>
-                                    <td name="tel"><?php echo $exibe["tel"]===""? "não cadastrado":$exibe["tel"]?></td>
-                                    <td name="email_contato"><?php echo $exibe["email_contato"]===""? "não cadastrado":$exibe["tel"]?></td>
-                                </tr>
+                        while ($exibe = mysqli_fetch_array($select)) {
+                        ?>
+                            <tr class="conta">
+                                <td class="id"><?php echo $exibe["id"] ?></td>
+                                <td class="nome"><?php echo $exibe["nome"] ?></td>
+                                <td class="email"><?php echo $exibe["email"] ?></td>
+                                <td class="tel"><?php echo $exibe["tel"] === "" ? "não cadastrado" : $exibe["tel"] ?></td>
+                                <td class="email_contato"><?php echo $exibe["email_contato"] === "" ? "não cadastrado" : $exibe["email_contato"] ?></td>
+                            </tr>
 
-                            <?php
-                            }
+                        <?php
+                        }
 
                         ?>
 
@@ -77,57 +77,57 @@
 
     <section class="container-fluid mt-5  d-flex justify-content-center align-items-center">
         <div class="container bg-secondary-subtle p-4  rounded-2  d-flex flex-column justify-content-center align-items-center">
-            
-                    <div class="row w-100">
-                        <div class="col">
-                            <h3 class="h3 mb-5 text-center">Editar</h3>
-                        </div>
 
-                    </div>
+            <div class="row w-100">
+                <div class="col">
+                    <h3 class="h3 mb-5 text-center">Editar</h3>
+                </div>
 
-                    <div class="row w-100 p-2">
-                        <div class="col">
-                            <label class="form-label">Nome de usuario</label>
-                            <input type="text" class="form-control" name="nome">
-                        </div>
-                    </div>
-                    
-                    <div class="row w-100 p-2">
-                        <div class="col">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email">
-                        </div>
-                    </div>
-                    
-                    <div class="row w-100 p-2">
-                        <div class="col">
-                            <label class="form-label">Senha</label>
-                            <input type="password" class="form-control" name="senha">
-                        </div>
-                    </div>
-                    
+            </div>
 
-                    <div class="row w-100 p-2">
-                        <div class="col">
-                            <label class="form-label">Contato</label>
-                            <input id="tel" type="tel" placeholder="(12) 12345-6789" class="form-control" name="tel">
-                        </div>
-                    </div>
-
-                    <div class="row w-100 p-2">
-                        <div class="col">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" name="emailCont">
-                        </div>
-                    </div>
-
-                    <div class="row w-100 p-2">
-                        <div class="col d-flex justify-content-center mt-5">
-                            <button class="btn btn-success" name="cadastrar">Confirmar</button>
-                        </div>
-                    </div>
+            <div class="row w-100 p-2">
+                <div class="col">
+                    <label class="form-label">Nome de usuario</label>
+                    <input type="text" class="form-control" name="nome">
                 </div>
             </div>
+
+            <div class="row w-100 p-2">
+                <div class="col">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email">
+                </div>
+            </div>
+
+            <div class="row w-100 p-2">
+                <div class="col">
+                    <label class="form-label">Senha</label>
+                    <input type="password" class="form-control" name="senha">
+                </div>
+            </div>
+
+
+            <div class="row w-100 p-2">
+                <div class="col">
+                    <label class="form-label">Contato</label>
+                    <input id="tel" type="tel" placeholder="(12) 12345-6789" class="form-control" name="tel">
+                </div>
+            </div>
+
+            <div class="row w-100 p-2">
+                <div class="col">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" name="emailCont">
+                </div>
+            </div>
+
+            <div class="row w-100 p-2">
+                <div class="col d-flex justify-content-center mt-5">
+                    <button class="btn btn-success" name="editar">Confirmar</button>
+                </div>
+            </div>
+        </div>
+        </div>
 
     </section>
 
@@ -138,33 +138,93 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-         <script src="https://code.jquery.com/jquery-4.0.0.js"
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
         integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 
-
-        <script type="text/javascript">
-
-            $(".conta").on("click",function(){
-                $(".conta [name]='id'").val()
-            })
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 
-            $('#tel').on("keypress",function(){
-            if($('#tel').val().length ==1){
-               $('#tel').val("("+$('#tel').val())
-            }
-            if($('#tel').val().length==3){
-               $('#tel').val($('#tel').val()+")")
+    <script type="text/javascript">
+        $('#tel').mask('(00) 00000-0000');
 
-            }
-            if($('#tel').val().length==9){
-               $('#tel').val($('#tel').val()+"-")
+        $(".conta").on("click", function() {
 
-            }
-            
+            $('[name="editar"]').attr("id", "0");
+
+
+            var id = $(this).find(".id").text();
+            var nome = $(this).find(".nome").text();
+            var email = $(this).find(".email").text();
+            var tel = $(this).find(".tel").text();
+            var email_contato = $(this).find(".email_contato").text();
+
+
+            $('[name="editar"]').attr("id", id);
+            $('[name="nome"]').val(nome);
+            $('[name="email"]').val(email);
+            $('[name="tel"]').val(tel === "não cadastrado" ? "" : tel);
+            $('[name="emailCont"]').val(email_contato === "não cadastrado" ? "" : email_contato);
+            $('[name="senha"]').val('');
+
         })
 
-        </script>
+
+        $('[name="editar"]').on("click", function() {
+
+            var id = $(this).attr("id");
+            var nome = $('[name="nome"]').val();
+            var email = $('[name="email"]').val();
+            var tel = $('[name="tel"]').val();
+            var email_contato = $('[name="emailCont"]').val();
+            var senha = $('[name="senha"]').val();
+
+            var dados = new FormData()
+
+            dados.append("id", id)
+            dados.append("nome", nome)
+            dados.append("email", email)
+            dados.append("senha", senha)
+            dados.append("tel", tel)
+            dados.append("email_contato", email_contato)
+
+            $.ajax({
+                url: "editar.php",
+                method: "POST",
+                data: dados,
+                processData: false,
+                contentType: false,
+                success: function() {
+                    alert("usuario editado com sucesso")
+                    location.reload()
+                }
+            })
+
+            <?php
+            if (isset($_POST["id"])) {
+
+                $id = $_POST["id"];
+                $nome = $_POST["nome"];
+                $email = $_POST["email"];
+                $senha = $_POST["senha"];
+                $tel = $_POST["tel"];
+                $email_contato = $_POST["email_contato"];
+
+
+                $editar = $senha === "" ? "UPDATE usuario SET nome = '$nome', email = '$email', tel = '$tel', email_contato = '$email_contato' WHERE id = '$id'" : "UPDATE usuario SET nome = '$nome', email = '$email', tel = '$tel', email_contato = '$email_contato', senha = '$senha' WHERE id = '$id'";
+
+                include "conexao.php";
+
+                $editar = mysqli_query($con, $editar);
+
+                if (mysqli_affected_rows($con)) {
+                    echo "usuario alterado com sucesso";
+                }
+            }
+
+
+            ?>
+        })
+    </script>
 
 </body>
 

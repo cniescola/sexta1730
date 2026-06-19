@@ -8,6 +8,9 @@
         $tel = $_POST["tel"];
         $emailCont = $_POST["emailCont"];
 
+
+        
+
         include "conexao.php";
         $cadastro = "INSERT INTO `usuario` (`id`,`nome`,`email`,`senha`,`tel`,`email_contato`) VALUES (NULL, '$nome','$email','$senha','$tel','$emailCont')";
 

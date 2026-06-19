@@ -59,7 +59,7 @@
                                     <td><?php echo $exibe["nome"]?></td>
                                     <td><?php echo $exibe["email"]?></td>
                                     <td><?php echo $exibe["tel"]===""? "não cadastrado":$exibe["tel"]?></td>
-                                    <td><?php echo $exibe["email_contato"]===""? "não cadastrado":$exibe["tel"]?></td>
+                                    <td><?php echo $exibe["email_contato"]===""? "não cadastrado":$exibe["email_contato"]?></td>
                                 </tr>
 
                             <?php
